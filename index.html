@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Kalkulus2</title>
+
+  <!--swiper css link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--font awesome cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!--custom css file link-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--header section startsts-->
+  <header class="header">
+    <section class="flex">
+      <a href="#home" class="logo">mathrix.</a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#calculator">calculator</a>
+        <a href="#tutorial">tutorial</a>
+        <a href="#partner">partner</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+  </header>
+
+  <!--header section ends-->
+
+  <!--home section startsts-->
+  <section class="home" id="home">
+    <div class="row">
+      <div class="content">
+        <h3>educa <span>mathrix</span></h3>
+        <a href="#about" class="btn">pelajari</a>
+      </div>
+      <div class="image">
+        <img src="images/homg2-img.svg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!--home section ends-->
+
+  <!--couter section starts-->
+  <section class="count">
+    <div class="box-container">
+      <div class="box">
+        <i class="fa-solid fa-seedling"></i>
+        <div class="content">
+          <h3>mudah digunakan</h3>
+          <p>pelajari matriks lebih mudah!</p>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fa-solid fa-sack-xmark"></i>
+          <div class="content">
+            <h3>akses gratis!</h3>
+            <p>tanpa biaya!</p>
+          </div>
+        </div>
+
+        <div class="box-container">
+          <div class="box">
+            <i class="fa-solid fa-face-smile"></i>
+            <div class="content">
+              <h3>ramah</h3>
+              <p>user friendly!</p>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!--couter section ends-->
+
+  <!--about section starts-->
+
+  <section class="about" id="about">
+    <div class="row">
+      <div class="image">
+        <img src="images/about-img.svg" alt="">
+      </div>
+
+      <div class="content">
+        <h3>Apa itu matriks?</h3>
+        <p>Matriks adalah sekumpulan elemen yang disusun pada baris dan kolom, dari sekumpulan elemen ini akan membentuk
+          susunan angka mendatar dan vertikal dalam bentuk persegi panjang. Setiap matriks diberi keterangan dengan
+          huruf besar seperti A, B, C, D, dst, sementara anggotanya diberikan keterangan dengan huruf kecil.
+          Contohnya adalah matriks berukuran 3×3, yang mengartikan bahwa matriks ini terdiri dari 3 baris dan 3 kolom.
+          Ukuran matriks ini disebut ordo.</p>
+        <a href="#tutorial" class="btn">lanjut</a>
+      </div>
+    </div>
+  </section>
+
+  <!--about section ends-->
+
+  <!-- Calculator section starts -->
+  <section class="calculator" id="calculator">
+    <h1 class="heading">Kalkulator <span>Determinan Matriks</span></h1>
+    <div class="matrix-input" id="matrixA">
+      <div>
+        <span>Matrix : </span>
+        <button class="reset-btn">Reset</button>
+        <button class="randomize-btn">Randomize</button>
+      </div>
+      <div class="ordo">
+        <span>Ordo : </span>
+        <button id="decreaseSize">-</button>
+        <input type="number" id="matrixSizeInput" min="1" max="10" value="2" readonly />
+        <button id="increaseSize">+</button>
+      </div>
+      <div class="input-grid"></div>
+    </div>
+
+    <!-- operations menu -->
+    <div class="operations" id="operations">
+      <div class="basic-ops" id="basic-ops">
+        <div class="determinant" id="determinant">
+          <span>Hitung determinan : </span>
+          <button>Enter</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- results display -->
+    <div class="display" id="display">
+      <div class="result"></div>
+    </div>
+  </section>
+  <!-- Calculator section ends -->
+
+  <!--tutorial section starts-->
+  <section class="tutorial" id="tutorial">
+    <h1 class="heading">video <span>pembelajaran 1-3</span></h1>
+    <div class="swiper tutorial-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide">
+          <video controls width="600" height="350">
+            <source src="video/video-1.mp4">
+            <h3>video pembelajaran bagian1</h3>
+          </video>
+        </div>
+
+        <div class="swiper-slide slide">
+          <video controls width="600" height="350">
+            <source src="video/video-22.mp4">
+            <h3>video pembelajaran bagian1</h3>
+          </video>
+        </div>
+
+
+        <div class="swiper-slide slide">
+          <video controls width="600" height="350">
+            <source src="video/video-3.mp4">
+            <h3>video pembelajaran bagian1</h3>
+          </video>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+  </section>
+  <!--tutorial section ends-->
+
+
+  <!--partners section starts-->
+  <section class="partner" id="partner">
+    <h1 class="heading">tim <span>penyusun</span></h1>
+    <div class="swiper partner-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide">
+          <img src="images/m_ikhsan_fauzi.jpeg" alt="">
+          <div class="share">
+            <a href="https://www.instagram.com/mifzfth_/" <a href class="fab fa-instagram"></a>
+            <a href="https://www.facebook.com/ikhsa.ikhsa.50767?locale=id_ID" <a href class="fab fa-facebook-f"></a>
+            <a href="https://www.youtube.com/@thearchonelectrotkyo9189" <a href class="fab fa-youtube"></a>
+          </div>
+          <h3>M Ikhsan Fauzi</h3>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="images/pandu.jpg" alt="">
+          <div class="swiper-slide share">
+            <a href="https://www.instagram.com/panduashidiq/" <a href class="fab fa-instagram"></a>
+            <a href="https://www.facebook.com/pandu.dwi.790" <a href class="fab fa-facebook-f"></a>
+            <a href="https://x.com/panduashidiq120" <a href class="fab fa-twitter"></a>
+          </div>
+          <h3>Pandu Dwi Ashidiqi</h3>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="images/rizal_saepul_anwar.jpeg" alt="">
+          <div class="share">
+            <a href="https://www.instagram.com/sans_tay/" <a href class="fab fa-instagram"></a>
+            <a href="https://www.facebook.com/andri.rian.18659041" <a href class="fab fa-facebook-f"></a>
+            <a href="https://www.youtube.com/channel/UC9JdHk9TDN4YaPg7iGs3vJg" <a href class="fab fa-youtube"></a>
+          </div>
+          <h3>Rizal Saepul Anwar</h3>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="images/ikhsan_ma.jpeg" alt="">
+          <div class="share">
+            <a href="https://www.instagram.com/valac.v/" <a href class="fab fa-instagram"></a>
+            <a href="https://web.facebook.com/ikhsan.ma.9231/" <a href class="fab fa-facebook-f"></a>
+            <a href="https://www.youtube.com/channel/UCgMnqUUhDv5yeKDV7Wr7zxA" <a href class="fab fa-youtube"></a>
+          </div>
+          <h3>Ikhsan Mahardika Albar</h3>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="images/delvina.jpeg" alt="">
+          <div class="share">
+            <a href="https://www.instagram.com/bbliessx?igsh=bDhvazV4cDJ4cGdx" <a href class="fab fa-instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=61551912834976" <a href class="fab fa-facebook-f"></a>
+            <a href="https://x.com/Ryuuiz19" <a href class="fab fa-twitter"></a>
+          </div>
+          <h3>Delvina Salma Hidayah</h3>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div>
+  </section>
+  <!-- partner section ends -->
+
+  <!--review section starts-->
+  <!-- <section class="reviews" id="reviews">
+    <h1 class="heading">student's<span>reviews</span></h1>
+    <div class="reviews-slider">
+
+      <div class="w">
+
+        <div class="slide">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium mollitia debitis eligendi quaerat
+            ducimus blanditiis voluptatum in eius odit? Officiis voluptatem obcaecati molestias similique, provident
+            sequi rerum harum impedit inventore!</p>
+          <div class="user">
+            <img class="potoo" src="https://banggaikep.go.id/portal/wp-content/uploads/2024/03/jokowi-1.jpg" alt="">
+            <div class="user-info">
+              <h3>john deo</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium mollitia debitis eligendi quaerat
+            ducimus blanditiis voluptatum in eius odit? Officiis voluptatem obcaecati molestias similique, provident
+            sequi rerum harum impedit inventore!</p>
+          <div class="user">
+            <img class="potoo" src="https://banggaikep.go.id/portal/wp-content/uploads/2024/03/jokowi-1.jpg" alt="">
+            <div class="user-info">
+              <h3>john deo</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium mollitia debitis eligendi quaerat
+            ducimus blanditiis voluptatum in eius odit? Officiis voluptatem obcaecati molestias similique, provident
+            sequi rerum harum impedit inventore!</p>
+          <div class="user">
+            <img class="potoo" src="https://banggaikep.go.id/portal/wp-content/uploads/2024/03/jokowi-1.jpg" alt="">
+            <div class="user-info">
+              <h3>john deo</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium mollitia debitis eligendi quaerat
+            ducimus blanditiis voluptatum in eius odit? Officiis voluptatem obcaecati molestias similique, provident
+            sequi rerum harum impedit inventore!</p>
+          <div class="user">
+            <img class="potoo" src="https://banggaikep.go.id/portal/wp-content/uploads/2024/03/jokowi-1.jpg" alt="">
+            <div class="user-info">
+              <h3>john deo</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium mollitia debitis eligendi quaerat
+            ducimus blanditiis voluptatum in eius odit? Officiis voluptatem obcaecati molestias similique, provident
+            sequi rerum harum impedit inventore!</p>
+          <div class="user">
+            <img class="potoo" src="https://banggaikep.go.id/portal/wp-content/uploads/2024/03/jokowi-1.jpg" alt="">
+            <div class="user-info">
+              <h3>john deo</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section> -->
+
+  <!--contact section startst-->
+
+  <section class="contact" id="contact">
+
+    <h1 class="heading"><span>masukan</span> untuk kami</h1>
+
+    <div class="row">
+
+      <div class="image">
+        <img scr="image/contact-img.svg" alt="">
+      </div>
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <span>Nama</span>
+        <input type="text" required placeholder="Masukan nama lengkap" maxlength="50" name="your-name" class="box">
+        <span>Email</span>
+        <input type="email" required placeholder="Masukan email valid" maxlength="50" name="your-email" class="box">
+        <span>pesan</span>
+        <input type="pesan" required placeholder="Masukan pesan" max="" min="0" name="your-massage" class="box">
+        <span>Pilih Course</span>
+        <select name="course" class="box" required>
+          <option value="" disabled selected>Pilih Pekerjaan --</option>
+          <option value="Umum">Umum</option>
+          <option value="Pelajar">Pelajar</option>
+          <option value="Pengajar">Pengajar</option>
+          <option value="Pekerja">Pekerja</option>
+          <option value="Lainnya">Lainnya</option>
+        </select>
+        <span>Pilih gender</span>
+        <div class="radio">
+          <input type="hidden" name="access_key" value="d4600875-bfe5-4cc4-801a-bd58597db8dc">
+          <input type="radio" name="Gender" value="Laki-laki" id="Laki-laki">
+          <label for="Laki-laki">Laki-laki</label>
+          <input type="radio" name="Gender" value="Perempuan" id="Perempuan">
+          <label for="Perempuan">Perempuan</label>
+        </div>
+        <input type="submit" value="kirim" class="btn" name="terkirim">
+      </form>
+
+  </section>
+
+  <!--contact section ends-->
+
+  <!--footer section starts-->
+
+  <footer class="footer">
+
+    <section>
+
+      <div class="share">
+        <h3>IKUTI SOSIAL MEDIA KAMPUS KAMI</h3>
+        <a href="https://www.facebook.com/univ.siliwangi?locale=id_ID" <a href class="fab fa-facebook-f"></a>
+        <a href="https://x.com/univ_siliwangi?t=M_zpElEh_1qxA0MoGcEPpA&s=09" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/univ_siliwangi/" <a href class="fab fa-instagram"></a>
+        <a href="https://www.youtube.com/@univ_siliwangi" <a href class="fab fa-youtube"></a>
+      </div>
+
+      <div class="credit">&copy; copyright2024 by <span>kelompok 3 Informatika23 (D) UNSIL</span> | all rights reserved!</div>
+
+    </section>
+
+  </footer>
+
+  <!--footer section ends-->
+
+  <!--swiper js link-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!--custom js file link-->
+  <script src="scripts/script.js"></script>
+  <script src="scripts/matrix.js"></script>
+</body>
+
+</html>
